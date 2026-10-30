@@ -1,0 +1,20 @@
+{
+  "assets": [
+    {
+      "name": "ANGULAR_HECKE_7_8_REPRODUCIBILITY_REPAIRED_2026-10-29.zip",
+      "bytes": 128597347,
+      "sha256": "9c1255008343d73f872cd0875a4efdef224ddd1cb0f65c432b9d3abcc5fd79e0"
+    },
+    {
+      "name": "ANGULAR_HECKE_7_8_FINAL_AUDIT_EVIDENCE.zip",
+      "bytes": 794217,
+      "sha256": "3ea9f7d7b00ee48bd7ca032a716cbf7480b5db6708f49a0c23e8b9e8d03857f5"
+    },
+    {
+      "name": "ANGULAR_HECKE_7_8_CONTINUATION_EVIDENCE.zip",
+      "bytes": 31884,
+      "sha256": "926e667af8420e77959472bb9082ff076b67a915218fc9befadce68274014fbc"
+    }
+  ],
+  "placement": "GitHub release assets; outside the Git repository"
+}

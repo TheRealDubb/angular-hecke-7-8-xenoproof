@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-30",
+  "source_archive_integrity": true,
+  "preserved_files": 8345,
+  "markdown_links_checked": 50,
+  "build_plan": {
+    "source_modules": 8213,
+    "toolchain_imports": 191,
+    "resources": 5,
+    "roots": [
+      "AngularPhysicalPublicStatementCheck",
+      "AngularPhysicalNormTwistNonvanishing"
+    ],
+    "plan_passed": true,
+    "new_compilation_performed": false,
+    "independent_kernel_replay_performed": false
+  },
+  "new_compilation": false,
+  "new_kernel_replay": false
+}

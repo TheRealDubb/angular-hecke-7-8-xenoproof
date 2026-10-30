@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "successful_source_compilations_reused": 8211,
+  "source_changes": [
+    "AngularNormTwistContinuation"
+  ],
+  "old_identity": {
+    "source_root": "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-packet\\ANGULAR_HECKE_7_8_COLD_REVIEW_2026-10-28",
+    "index_sha256": "4f7f37585a018796590275655fbba9ceb89f5367f456bd25df60157d3d62da38",
+    "lean_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+    "revision": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "recipe_sha256": "430e1919d3b8a4794b03f2ae853628cee9c727b2f7a7e4e64a3c55e4b91b816e",
+    "helper_sha256": "dcb8a734021037073dd02f9e7484b43222ba665b951acda36636e90682fe0afb"
+  },
+  "new_identity": {
+    "source_root": "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-packet\\ANGULAR_HECKE_7_8_COLD_REVIEW_2026-10-28",
+    "index_sha256": "259cb6df80d816a6ca04f975bd696d1937f384be004d6bb411bf26545dc0b44b",
+    "lean_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+    "revision": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "recipe_sha256": "430e1919d3b8a4794b03f2ae853628cee9c727b2f7a7e4e64a3c55e4b91b816e",
+    "helper_sha256": "dcb8a734021037073dd02f9e7484b43222ba665b951acda36636e90682fe0afb"
+  },
+  "raw_attempt": "evidence/independent_repair/failed_import_removal_attempt",
+  "prior_attempt_seconds": 43668.81300000008,
+  "script_sha256": "5abc50b9f07cbf38a3a005a775115e7ee319406f9c474bc881b76b5d86c00c1f",
+  "scope": "Reuse of this investigation's own fresh compilations, not author caches. Raw original receipts remain immutable; current receipts explicitly describe checked reuse."
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "original_lean_sources": 8229,
+  "byte_identical_original_lean_sources": 8228,
+  "changed_original_lean_sources": [
+    "lean/AngularNormTwistContinuation.lean"
+  ],
+  "one_new_legacy_module": "lean/AngularNormTwistSeedContinuation.lean",
+  "retained_declaration_text_verbatim": true,
+  "relocated_seed_statement_and_proof_verbatim": true,
+  "public_root_source_hashes": {
+    "AngularPhysicalFinalAssembly": "0e22bb40a68f3a2c200509f3aecd93f9bba7d629a0e9cdd0a107db08f2e984f3",
+    "AngularPhysicalPublicStatementCheck": "4567f33c2e2a0bef1e41e190e2c35e4adaaef08889b82bc68d27660e10504ac2",
+    "AngularPhysicalNormTwistNonvanishing": "316f406744b90470206f0ad3dfad4371eb9e6eb7f56dd5e48c139ceb4e7fa786"
+  },
+  "scope": "Exact bytes establish preservation of all declarations in the source tree, with one unused corollary relocated. Compilation and kernel replay are separate checks."
+}

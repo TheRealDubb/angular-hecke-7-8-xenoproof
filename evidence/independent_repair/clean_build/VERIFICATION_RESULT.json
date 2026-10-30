@@ -1,0 +1,14 @@
+{
+  "full_clean_build": true,
+  "fresh_kernel_replay": true,
+  "source_import_audit": true,
+  "public_proof_census": true,
+  "standard_axiom_types": true,
+  "roots": [
+    "AngularPhysicalPublicStatementCheck",
+    "AngularPhysicalNormTwistNonvanishing"
+  ],
+  "source_modules": 8213,
+  "replay_recipe_sha256": "18e1309d83029993f19ddde5e4cc26cf3a6b320ac55d37be7ed9a8e5d2740b39",
+  "evidence_scope": "Freshly built source closure and native Lean kernel replay; external toolchain remains trusted."
+}

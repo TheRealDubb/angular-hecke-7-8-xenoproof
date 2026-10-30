@@ -1,0 +1,86 @@
+import AngularUniformPhysical
+
+/-! Literal angular cell bound with uniformity in the arithmetic data and
+finite prime-index types. Only the fixed angular order may enter the common
+analytic degree; the unbounded angular family is never put under a supremum. -/
+namespace OAI.CubicEisenstein.AngularUniformCell
+open scoped Classical BigOperators ContDiff
+open MeasureTheory SevenEighths ActualEisensteinCubic CompletedGauss CompletedDyadic
+open CanonicalQuadraticSieve InverseMoment InverseReflectedPhase InverseKernelSourceUniform
+open AngularControlledScalar AngularHybridEnergy AngularPhysicalCell
+noncomputable section
+local notation "Eis" => ActualEisensteinCubic.O
+local notation "λ₀" => ConcretePrimeRowBridge.goodLambda
+universe u v
+
+theorem physical_angular_cell_energy_uniform (order : ℕ)
+    (ε : ℝ) (hε : 0<ε) (a₀ b₀ : ℝ) (ha₀ : 0<a₀)
+    (windows : Fin 4→ℝ→ℂ) (M : Fin 4→ℝ) (hM : ∀ i, 0≤M i)
+    (hwindowNorm : ∀ i y, ‖windows i y‖≤1)
+    (hwindows : ∀ i y, windows i y≠0 → |y|≤M i)
+    (W : ℝ→ℂ) (hWsupport : Function.support W ⊆ Set.Icc a₀ b₀) (hW : ContDiff ℝ ∞ W) :
+    ∃ (degree : ℕ), ∀ {N a c : Eis} {mode : Bool},
+    ∃ (C₀ C : ℝ), 0≤C₀ ∧ 0<C ∧
+    ∀ {φ : Type u} {σ : Type v} [Fintype φ] [Fintype σ], ∀ (X Y B L : ℝ), 1≤X → 1≤Y → 1≤B → 1≤L →
+    ∀ (F : PrimeFamily φ) (jF : φ→ℕ)
+      (s : FixedCuspShape (ControlledStratumArithmetic.fixedCusp a c mode)) (hc : c≠0),
+      (9:Eis)*c ∣ N → (if mode then λ₀^2∣a-1 else λ₀^2∣c-1) → IsCoprime a c →
+      Pairwise (Function.onFun IsCoprime F.ideal) →
+      (∀ f, IsCoprime (Ideal.span {N}) (F.ideal f)) →
+      (∀ f, ringChar (Eis⧸F.ideal f)≠2) → (∀ f, jF f<6) →
+    ∀ {ι : Type*} [Fintype ι] (G0 : PrimeFamily ι)
+      (D0 : ControlledStratumArithmetic G0.generator N a c mode)
+      (u : Eisˣ) (m : ℕ) (T θ QK QP Qn Qb : ℝ),
+      0<T → 0<QK → 0<QP → 0<Qn → 0<Qb →
+    ∀ (rows nset bset Pset : Finset (Ideal Eis)) (S : Ideal Eis→PrimeFamily σ)
+      (hrows : ∀ K ∈ rows, Admissible K ∧ (Ideal.absNorm K:ℝ)≤X)
+      (D : ∀ K : rows, ∀ P : Pset, IsCoprime K.val P.val →
+        ControlledStratumArithmetic (F.reflected K.val (hrows K.val K.property).1 (S P.val)).generator N a c mode)
+      (r₀ aw₀ : Ideal Eis→ℂ) (w₀ : Ideal Eis→Ideal Eis→ℂ),
+      (∀ K ∈ rows, (∀ f, IsCoprime (F.ideal f) K) ∧ IsCoprime (Ideal.span {N}) K) →
+      (∀ P ∈ Pset, (∏ i, (S P).ideal i)=P) →
+      (∀ P ∈ Pset, Pairwise (Function.onFun IsCoprime (F.sum (S P)).ideal)) →
+      (∀ P ∈ Pset, ∀ i, IsCoprime (Ideal.span {N}) ((F.sum (S P)).ideal i)) →
+      (∀ P ∈ Pset, ∀ i, ringChar (Eis⧸(F.sum (S P)).ideal i)≠2) →
+      (∀ n ∈ nset, CubicSieve.Admissible n ∧ (Ideal.absNorm n:ℝ)≤Y) →
+      (∀ b ∈ bset, primaryGenerator b≠0 ∧ (Ideal.absNorm b:ℝ)≤B) →
+      (∀ P ∈ Pset, CubicSieve.Admissible P ∧ L≤(Ideal.absNorm P:ℝ) ∧ (Ideal.absNorm P:ℝ)≤2*L) →
+      (∀ K P hp, (D K P hp).fixedFactor=D0.fixedFactor) →
+      (∀ K P hp u m n b, actualCuspColumn (D K P hp) s hc u m n b=actualCuspColumn D0 s hc u m n b) →
+      (∀ K ∈ rows, ‖r₀ K‖≤1) → (∀ P ∈ Pset, ‖aw₀ P‖≤1) → (∀ n b, ‖w₀ n b‖≤1) →
+      let R := kernelCenter (actualKernelCoefficient F s m T) QK QP Qn Qb
+      let scalar := Real.exp (M 2/2+M 3)/(ramifiedScale 1 completedRamifiedStep m*Real.sqrt Qn*Qb)*smallScalar R
+      let branches := survivingFrozenBranches F jF (actualCuspColumn D0 s hc u m) nset bset
+      (∑ K : rows, ‖physicalAngularKernelRow order F K.val (hrows K.val K.property).1 S jF Pset nset bset
+        (D K) s hc u m windows QK QP Qn Qb W θ T r₀ aw₀ w₀‖^2) ≤
+      scalar^2*((branches.card:ℝ)*∑ e∈branches,
+        let Yq := extractedDualScale (frozenExtracted F jF e 1) Y
+        let Bq := extractedDualScale (frozenExtracted F jF e 2) B
+        (frozenBranchScale F jF e)^2*
+          (C*(X*Yq*Bq*L)^ε*(X+Yq*Bq)*Bq*(Yq+L+(Yq*L)^(2/3:ℝ))))*(C₀*(1+‖θ‖)^degree)^2 := by
+  obtain ⟨degree,hdegree⟩ := AngularUniformPhysical.surviving_physical_source_energy_uniform order
+    ε hε a₀ b₀ ha₀ windows M hM hwindowNorm hwindows W hWsupport hW
+  refine ⟨degree,?_⟩
+  intro N a c mode
+  obtain ⟨C₀,C,hC₀,hC,he⟩ := hdegree (N := N) (a := a) (c := c) (mode := mode)
+  refine ⟨C₀,C,hC₀,hC,?_⟩
+  intro φ σ _ _ X Y B L hX hY hB hL F jF s hc hN hbase hac hF hNF hcharF hj
+    ι _ G0 D0 u m T θ QK QP Qn Qb hT hQK hQP hQn hQb rows nset bset Pset S hrows D r₀ aw₀ w₀
+    hrowcop hproducts hScop hSN hSchar hn hb hP hκ hA hr₀ haw₀ hw₀
+  have hh := he X Y B L hX hY hB hL F jF s hc hN hbase hac hF hNF hcharF hj
+    G0 D0 u m T θ QK QP Qn Qb hT hQK hQP hQn hQb rows nset bset Pset S hrows D
+    (angularIdealWeight order r₀) (angularIdealWeight order aw₀) (angularDualWeight order u m w₀)
+    hrowcop hproducts hScop hSN hSchar hn hb hP hκ hA
+    (fun K hK => (angularIdealWeight_norm_le order r₀ K).trans (hr₀ K hK))
+    (fun P hP => (angularIdealWeight_norm_le order aw₀ P).trans (haw₀ P hP))
+    (fun n b => (angularDualWeight_norm_le order u m w₀ n b).trans (hw₀ n b))
+  have hphase : ‖shapeOrderPhase s (c * ∏ i, F.generator i) ^ order‖ = 1 := by
+    rw [norm_pow, shapeOrderPhase_norm s _
+      (mul_ne_zero hc (Finset.prod_ne_zero_iff.mpr (fun i _ => F.generator_ne_zero i))), one_pow]
+  apply le_trans (le_of_eq (Finset.sum_congr rfl (fun K _ => ?_))) hh
+  rw [physicalAngularKernelRow_separate order F K.val (hrows K.val K.property).1 S jF
+    Pset nset bset hproducts, norm_mul, hphase, one_mul]
+
+#print axioms physical_angular_cell_energy_uniform
+end
+end OAI.CubicEisenstein.AngularUniformCell

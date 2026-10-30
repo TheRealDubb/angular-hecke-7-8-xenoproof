@@ -1,0 +1,137 @@
+ANGULAR HECKE 7/8 - REPRODUCIBILITY REPAIR AND UPDATED VERDICT
+Independent follow-up, 2026-10-29
+
+OUTCOME
+Verdict 5: ACCEPT for the separately repaired public theorem source closure.
+The original ZIP remains REJECT for reproducibility. Verdicts 1-4 remain ACCEPT.
+The theorem, its family, normalization, quantifiers, boundary and pole exceptions
+are unchanged. No new analytic estimate or mathematical argument was introduced.
+
+EXACT REPAIR
+AngularNormTwistContinuation.lean previously imported AngularSeedNonvanishing
+solely for its last, unused 23/24 corollary, physical_seed_all_norm_twists. The
+corollary's complete statement and proof were moved verbatim into the new
+AngularNormTwistSeedContinuation.lean, which retains its seed import. Required
+continuation declarations are unchanged. The public 7/8 theorem files are
+byte-identical. Of 8,229 original Lean sources, 8,228 are byte-identical; the
+remaining file has only this module split. SOURCE_PRESERVATION.json and
+source_repair.patch record the exact check. Every declaration's source text is
+preserved, including the relocated unused corollary.
+
+The same public roots, AngularPhysicalPublicStatementCheck and
+AngularPhysicalNormTwistNonvanishing, now have an import closure of 8,213 supplied
+source modules and 191 directly referenced toolchain modules, with five packaged
+elaboration resources. Sixteen obsolete sources leave that closure; they remain
+archived unchanged, along with the new legacy module. REPAIR_RECORD.json lists
+them. This certifies the complete public theorem import closure, not independent
+compilation of those excluded legacy files.
+
+EARLIEST ORIGINAL FAILURE AND CONSEQUENCES
+lean/AngularSieveDensity.lean:21 names the unavailable predicate
+OAI.CubicEisenstein.AngularSieveModels.HasCanonicalThetaModels; line 34 also calls
+the unavailable AngularShortEnergy.canonicalShortState_uniform_twist. The
+historical successful compilation selected an older AngularShortEnergy object
+than the final public-root setup. Independent re-elaboration reproduced the
+missing-name errors; unrestricted imported-environment replay also failed.
+The first 600-second timeout was inconclusive, not evidence of mathematical
+falsity. The public theorem's actual declaration dependency closure separately
+passed replay in the baseline audit; the stale branch was outside that closure.
+The module split prevents the unused corollary from importing this obsolete
+branch into the public build. It is a finite dependency repair, not a new
+analytic estimate or substantial change of mathematical architecture.
+
+NEW CHECKS PERFORMED INDEPENDENTLY
+1. Full clean build: 8,213 source modules, including both public roots,
+   successfully compiled. Build-attempt runtime total: 44014.80 seconds.
+   The initial full attempt compiled 8,211 successfully before detecting the
+   auditor's line-ending mistake. Those fresh outputs were reused only after
+   their sources/imports, dependencies, toolchain/recipe, artifacts and logs
+   were checked unchanged. The final two modules were compiled after correction.
+   Explicit verified-reuse receipts link to the immutable compilation receipts.
+   Lean's own parser independently confirmed all 8,213 source/import headers.
+   A negative control detected the original auditor import/index mismatch.
+   Each invocation used
+   the repaired source tree, a fresh object tree and the pinned Lean toolchain.
+   No author cached objects or historical importArts/setup files were admitted.
+   Commands, source hashes, direct dependency fingerprints, output hashes and
+   logs are recorded per module in evidence/independent_repair/clean_build.
+2. Pre-replay integrity: all source/receipt/dependency/log checks and
+   20,519 compiled artifact-part hashes passed.
+3. Fresh kernel replay: ReplayRoots imports both public roots and adds no
+   declaration. leanchecker --fresh --verbose ReplayRoots exited 0 after
+   1648.22 seconds, replaying their combined imported environment in a fresh
+   native Lean kernel environment. KERNEL_REPLAY.json and kernel_replay.log
+   record the command, executable hash, scope, timing and result.
+4. Public proof dependency census: CENSUS constants=129614, unsafe=0, partial=0, axioms=3.
+   No missing, unsafe or partial dependency; no axiom other than propext,
+   Classical.choice and Quot.sound. Their standard types were independently
+   checked again on the clean build (StandardAxiomTypes.json/log).
+   Separately, the retained continuation declarations were compared with the
+   baseline objects: all eight types, definition bodies and proof bodies match
+   exactly. See
+   CONTINUATION_SEMANTICS.json/log. That comparison uses historical objects only
+   as a baseline; they are not admitted to the clean build or fresh replay.
+5. Original ZIP SHA-256 rechecked unchanged:
+   ebb393402ba54b9c86c1f1ec13ac551085ae136d04576660641f17e7537a7db0
+
+SUPPLIED RECORDS VERSUS THESE CHECKS
+Original author receipts, caches referenced by historical setups, and original
+narrative documents remain historical evidence. They do not certify this fresh
+build. The baseline metadata is retained under baseline_metadata. The repaired
+root MODULE_INDEX and root manifest describe this separate copy. An initial
+ZIP check detected a naming collision with the nested historical manifest;
+it is retained byte-for-byte as baseline_metadata/ORIGINAL_MANIFEST_SHA256.json.
+The preservation helper initially recreated the conflicting old filename during
+repackaging; its archival destination was corrected before final packaging.
+This packaging correction did not change any source, recipe or build output.
+An initial
+sequential attempt was explicitly interrupted to use dependency scheduling;
+its outputs were not reused. A separate successful cached-import diagnostic was
+not treated as clean-build evidence. ATTEMPTS.json distinguishes these records.
+
+AUDITOR REPAIR FAILURE AND CORRECTION
+The first removal script expected CRLF; the source used LF. It therefore moved
+the unused corollary but left its import. The first preservation check repeated
+the same mistake. Clean compilation failed at AngularNormTwistContinuation:1
+with unknown module prefix AngularSeedNonvanishing (the retained line was :3).
+This was an auditor implementation defect, distinct from the original packet's
+AngularSieveDensity defect. Explicit line-content removal and the independent
+Lean header-parser audit corrected it without any mathematical change.
+The evidence copy was still running when correction completed; some source/
+metadata snapshots were captured late. Failed source/index snapshots were
+reconstructed to their exact hashes recorded in the original compiler receipt
+and build identity. Raw compiler receipts, logs and results are unchanged.
+SNAPSHOT_PROVENANCE.json records this distinction; no reconstructed snapshot
+is presented as an untouched contemporaneous capture.
+
+REPRODUCTION AND TRUST BOUNDARY
+Follow REPAIR_README.txt: verify the manifest, inspect the plan, run
+tools/clean_build.py in a new external build directory, then
+tools/replay_clean_build.py. The latter verifies hashes, replays both roots,
+and runs the proof census and standard-axiom type checks. Tools use Python's
+standard library and the pinned Lean 4.34.1 toolchain. The ZIP includes sources,
+resources, recipes, receipts and logs; runtime and compiled objects are omitted.
+The fresh kernel replay is Lean's native implementation, not an external kernel.
+
+FIVE VERDICTS AND REMAINING LIMITS
+Criterion                                      Original ZIP    Repaired copy
+1 Mathematical soundness                       ACCEPT          ACCEPT
+2 Statement and scope fidelity                 ACCEPT          ACCEPT
+3 Imported input applicability                 ACCEPT          ACCEPT
+4 Coefficients, normalization and uniformity    ACCEPT          ACCEPT
+5 Verification evidence and reproducibility     REJECT          ACCEPT
+
+Verdicts 1-4 retain the detailed baseline audit's reasoning and source locations
+in ANGULAR_HECKE_7_8_FINAL_AUDIT.txt and its evidence ZIP. The original earliest
+failure is AngularSieveDensity:21 (and :34), as described above. After correcting
+the auditor import-removal error, no additional failure was found in the
+completed public source build and replay.
+
+Material not established: independent buildability of the 16 excluded legacy
+sources or the moved legacy corollary; an external kernel implementation;
+execution on another operating system; official runtime binary-byte provenance;
+manual rereading of every lower helper/foundation, all original Kubota/Patterson
+papers, or both background manuscripts in full. Successful clean compilation
+is not alone the reason for acceptance: source-preservation, dependency integrity,
+fresh proof replay, semantic audit and the proof's axiom census are separate
+supporting evidence. These remaining limits do not claim mathematical falsity.

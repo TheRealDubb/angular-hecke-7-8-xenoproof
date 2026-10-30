@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-07\\g\\work\\formal\\runtime\\lean-4.34.1-windows\\bin\\lean.exe",
+    "-j1",
+    "-R",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-packet\\ANGULAR_HECKE_7_8_COLD_REVIEW_2026-10-28\\tools",
+    "-o",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-full-build\\objects\\ReplayRoots.olean",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-packet\\ANGULAR_HECKE_7_8_COLD_REVIEW_2026-10-28\\tools\\ReplayRoots.lean"
+  ],
+  "exit_code": 0,
+  "source_sha256": "4342542b457862e06c91d4e55b8db15b41f295253f882ac1971d4e40cba19ba3",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "object_sha256": "03a6fa2e79dff6e8821a9df061166779bee8693026cc3e388b476ac7dfad708d"
+}

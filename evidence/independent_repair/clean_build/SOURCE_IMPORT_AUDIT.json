@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-07\\g\\work\\formal\\runtime\\lean-4.34.1-windows\\bin\\lean.exe",
+    "--run",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-packet\\ANGULAR_HECKE_7_8_COLD_REVIEW_2026-10-28\\tools\\ParseSourceImports.lean",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-full-build\\source_import_inputs.tsv"
+  ],
+  "exit_code": 0,
+  "seconds": 46.375,
+  "harness_sha256": "a5072f63600638ea5e6eec3f6821248eec6ad66fe17469979e205c65cbd2e32c",
+  "lean_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+  "index_sha256": "259cb6df80d816a6ca04f975bd696d1937f384be004d6bb411bf26545dc0b44b",
+  "log_sha256": "f016f7b1f34e6bae6f4e85f464afd5743b6e75710201599f9ae5c7aa056070eb",
+  "passed": true,
+  "source_modules": 8213,
+  "mismatches": {},
+  "scope": "Explicit source imports parsed by pinned Lean. Duplicate module imports compared in first-occurrence order; implicit Init remains a toolchain dependency."
+}

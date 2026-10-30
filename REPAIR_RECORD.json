@@ -1,0 +1,52 @@
+{
+  "original_zip_sha256": "ebb393402ba54b9c86c1f1ec13ac551085ae136d04576660641f17e7537a7db0",
+  "original_module_count": 8229,
+  "repaired_module_count": 8213,
+  "excluded_from_root_closure": [
+    "AngularAllTypeTransport",
+    "AngularEulerCorrection",
+    "AngularEulerProducts",
+    "AngularFiniteRestoration",
+    "AngularIdealRow",
+    "AngularInitialDensity",
+    "AngularNonzeroSource",
+    "AngularPhysicalSieveEnergy",
+    "AngularPoissonMoment",
+    "AngularRetainedSource",
+    "AngularSeedNonvanishing",
+    "AngularSeedRegularization",
+    "AngularSieveDensity",
+    "AngularSixthPower",
+    "AngularTotientSeed",
+    "AngularWeightedMellin"
+  ],
+  "excluded_sources_retained_unchanged": true,
+  "all_declaration_text_preserved": true,
+  "moved_declaration": "OAI.SevenEighths.Angular.NormTwist.physical_seed_all_norm_twists",
+  "moved_declaration_bytes_sha256": "bf0e6061353035e3932eea0b3001b07a7ae3839ed2fe3e6295fef3539eacdbcf",
+  "source_changes": [
+    {
+      "path": "lean/AngularNormTwistContinuation.lean",
+      "old_sha256": "ab86ba389065cf358f1a4dd02e845daeafd1545b1369a3e8d79e085bdc01893c",
+      "new_sha256": "21eb8bca9f88b4152716f33d2dac0796144ed53305ecf28f0bab46af0b444896",
+      "change": "Remove the seed import and move its one unused theorem verbatim to the legacy file"
+    },
+    {
+      "path": "lean/AngularNormTwistSeedContinuation.lean",
+      "new_sha256": "2104e94c094d9bf61acffed6d5edac4414cc6c0950f9e354fc7a0d3e3119fb1e",
+      "change": "New legacy module preserving the moved theorem and its original seed dependency"
+    }
+  ],
+  "scope": "Build and replay the full import closure of the same two public roots; legacy sources outside that closure remain archived, not certified.",
+  "status": "Full retained source closure clean-built, hash-verified, and successfully replayed in a fresh native Lean kernel environment.",
+  "repaired_verdict_5": "ACCEPT",
+  "original_packet_verdict_5": "REJECT",
+  "verification_record": "evidence/independent_repair/clean_build/VERIFICATION_RESULT.json",
+  "audit_attempt_history": "evidence/independent_repair/ATTEMPTS.json",
+  "source_import_audit": "evidence/independent_repair/clean_build/SOURCE_IMPORT_AUDIT.json",
+  "checked_resumption": "evidence/independent_repair/clean_build/CHECKPOINT_REUSE.json",
+  "fresh_replay_completed_utc": "2026-10-30T01:25:14.597469+00:00",
+  "verification_completed_utc": "2026-10-30T01:49:50.049911+00:00",
+  "historical_manifest": "evidence/independent_repair/baseline_metadata/ORIGINAL_MANIFEST_SHA256.json",
+  "historical_manifest_bytes_unchanged": true
+}

@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-07\\g\\work\\formal\\runtime\\lean-4.34.1-windows\\bin\\leanchecker.exe",
+    "--fresh",
+    "--verbose",
+    "ReplayRoots"
+  ],
+  "LEAN_PATH": "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-full-build\\objects",
+  "checker_sha256": "1f18d5f13e24519bc7e21217500b45be36bc6bfde70229556c857e6ad066811f",
+  "roots": [
+    "AngularPhysicalPublicStatementCheck",
+    "AngularPhysicalNormTwistNonvanishing"
+  ],
+  "start_utc": "2026-10-30T00:57:44.639828+00:00",
+  "status": "completed",
+  "scope": "Native Lean fresh-environment replay of both public roots and their full imported environment, using only this clean build plus the pinned toolchain. Not an external kernel implementation.",
+  "pid": 79984,
+  "exit_code": 0,
+  "elapsed_seconds": 1648.219000000041,
+  "end_utc": "2026-10-30T01:25:14.597469+00:00",
+  "log_sha256": "2691c4b982c59017a271df4409e8c586a74dad76a69bfed246cdc1722fffeaa9"
+}

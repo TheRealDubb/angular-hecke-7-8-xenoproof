@@ -1,0 +1,3 @@
+axiom propext : ∀ {a b : Prop}, (a ↔ b) → Eq.{1} a b
+axiom Classical.choice.{u} : {α : Sort u} → Nonempty.{u} α → α
+axiom Quot.sound.{u} : ∀ {α : Sort u} {r : α → α → Prop} {a b : α}, r a b → Eq.{u} (Quot.mk.{u} r a) (Quot.mk.{u} r b)

@@ -1,0 +1,16 @@
+{
+  "timestamp_utc": "2026-10-29T12:06:33.071916+00:00",
+  "report_sha256": "808a5ef0bb4f219fac5a4ea67658c10aa70ba9354846bf6935c8d4032224b8a7",
+  "evidence_zip_sha256": "3ea9f7d7b00ee48bd7ca032a716cbf7480b5db6708f49a0c23e8b9e8d03857f5",
+  "evidence_zip_bytes": 794217,
+  "manifest_payload_files": 122,
+  "archive_integrity": "PASS",
+  "verdicts": {
+    "mathematical_soundness": "ACCEPT",
+    "statement_scope": "ACCEPT",
+    "imported_applicability": "ACCEPT",
+    "coefficient_normalization_uniformity": "ACCEPT",
+    "verification_reproducibility": "REJECT"
+  },
+  "scope": "Specified critical dependency audit completed using source review, exact algebra, semantic comparison, and a complete native public-declaration-closure replay. Full portable source rebuild remains rejected/unperformed as detailed in the report."
+}

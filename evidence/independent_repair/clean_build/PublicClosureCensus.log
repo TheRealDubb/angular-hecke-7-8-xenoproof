@@ -1,0 +1,5 @@
+AXIOM propext
+AXIOM Classical.choice
+AXIOM Quot.sound
+CENSUS constants=129614, unsafe=0, partial=0, axioms=3
+PUBLIC CLOSURE CENSUS PASSED

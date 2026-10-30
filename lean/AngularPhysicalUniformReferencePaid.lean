@@ -1,0 +1,138 @@
+import AngularPhysicalCanonicalReferencePaid
+import AngularPhysicalBandSubtypeTransport
+
+noncomputable section
+open scoped Classical BigOperators SchwartzMap ContDiff
+namespace OAI.SevenEighths.Angular.CanonicalPaid
+open EnergyState EnergyBands RelativePrime InductionEnergy PlainRows
+open EnergyAllocatedChildren EnergyPaid PlainRows.CommonRows PlainRows.AllocatedRayDictionary
+open AllocatedNatural AllocatedRadial NaturalRows ChildState ConcreteTraceCRT PlainRows.RadialEnergy
+open CenteredMomentOriginalRadialComparison (radialEnergy)
+open CenteredMomentRadialEligibleEnergy (Radial)
+open CenteredMomentFiniteProfileExceptional QuadraticInitialBound
+open CenteredMomentCommonAllocationSum CenteredMomentDivisorAllocation CenteredMomentDivisorRaw
+open CenteredMomentAllocatedNaturalSource (Plain rawScale rawScale_pos)
+open CenteredMomentRetainedProfile
+open CenteredMomentEnergyAllocatedClipped (pair scale scale_pos scale_cap)
+open CenteredMomentEnergyBands (length)
+open CenteredMomentSectorLocalization (dyadicScale dyadicScale_pos)
+open CenteredMomentFirstAmplifiedCapacityCommon (ratioPenalty)
+local notation "O" => ActualEisensteinCubic.O
+variable {α:Type*} [Fintype α] [DecidableEq α]
+variable (M:Ideal O) [NeZero M]
+local instance AngularUniformReferencePaidFiniteQuotient : Finite (O⧸M) :=
+  Ring.HasFiniteQuotients.finiteQuotient (NeZero.ne M)
+variable (H:Subgroup (O⧸M)ˣ) (hH:RayOrthogonality.globalUnits M≤H)
+variable (angularOrder:ℕ)
+theorem original_subsets_reference_paid (W:ℝ→ℂ)(aslot bslot Mcap Lslot εremove lo hi κ:ℝ)
+    (a b Mslot εmask:ℝ)(hMslot:0≤Mslot)(hεmask:0<εmask)(haPlain:0<a)(L:ℝ)(hL:0≤L)(degree:ℕ)(S:Finset (ℕ×ℕ))
+    (ha:0<aslot)(hWs:Function.support W⊆Set.Icc aslot bslot)(hW:ContDiff ℝ ∞ W)
+    (hMcap:0≤Mcap)(hLs:0≤Lslot)(hε:0<εremove)
+    (hκ:(3/4:ℝ)≤κ):
+    ∃n:ℕ,∃T:Finset (ℕ×ℕ),∃dc:ℕ,∃Cc:ℝ,0<Cc ∧ ∀η₀:AngularCharacter,∃Z₀:ℝ,1<Z₀ ∧
+    ∀Jorig:Finset α,∀θ:Jorig→RayQuotient.Characters M H,∀Z:ℝ,Z₀≤Z →
+    ∀εchild:ℝ,∀(Q:Ideal O),Q≤M →
+    ∀C₀ C₁:ℝ,0≤C₀ → 0≤C₁ →
+    ZeroAt angularOrder (internalQ Q η₀) (a/max 1 b) b 2 0 L Mcap εchild Z degree S C₀ →
+    PositiveAt (α:=α) M H hH angularOrder W bslot (a/max 1 b) b 2 0 L Lslot lo hi
+      Mcap εchild κ Z η₀ Q degree S C₁ →
+    ∀(w σ freq:Jorig→ℝ)(v height mesh:ℝ),
+    0≤mesh → (∀i,0≤w i) → (∀i,w i≤mesh) → (∀i,w i≤Lslot) →
+    (∀i,lo≤σ i) → (∀i,σ i≤hi) → 0≤height → (∀i,|freq i|≤height) →
+    ∀src:Input Jorig,Matches M H hH src η₀ θ w σ freq W bslot Z →
+    (∀i,src.hi i≤bslot) → (∀i,src.M i≤Mslot) →
+    ∀(C R:Ideal O)(B:actualAllocations src.pools C)(D:Ideal O)
+      (alloc:Allocation D (Finset.univ:Finset (CenteredMomentCommonProfile.liveIndices B.val⊕Fin 2))),R≠0 →
+    ∀(τ:AngularCharacter),τ.k.natAbs=angularOrder → τ.k=η₀.k → ∀(dyad:Fin 4→ℤ),∀_hn:1≤CenteredMomentSectorLocalization.dyadicScale (dyad 1),
+    Real.logb Z (CenteredMomentSectorLocalization.dyadicScale (dyad 1))+
+      Real.logb Z (τ.modulus.absNorm:ℝ)≤Mcap →
+    ∀p:Profiles a b,p.profile 0=src.W₁ → p.profile 1=src.W₂ →
+    let d:=commonData (withHeight src τ v) C R B
+    d.X₁≤Z^L → d.X₂≤Z^L → d.Y₁≤Z^L → d.Y₂≤Z^L →
+    ∀A Mparent reference u ell δ₁ δ₂ θclip:ℝ,0<reference →
+    0≤u → 0≤ell → 0≤δ₁ → 0≤δ₂ → 0≤θclip →
+    A+(6*κ-1)*(∑i:CenteredMomentCommonProfile.liveIndices B.val,w i.val)≤Mparent →
+    Real.logb Z (d.X₁*d.X₂*∏i:CenteredMomentCommonProfile.liveIndices B.val,src.P i.val)-Real.logb Z reference≤
+      A-Mparent+6*(u+ell)+δ₁+Real.logb Z (ratioPenalty dyad) →
+    Real.logb Z (dyadicScale (dyad 1))+Real.logb Z (τ.modulus.absNorm:ℝ)-Real.logb Z reference≤δ₂ →
+    Real.logb Z (max 1 b*max 1 b)≤2*θclip →
+    childEnergy d (canonicalRadial τ (internalQ Q η₀) dyad) D alloc ≤
+      Cc*(Ideal.absNorm (R*C).radical:ℝ)^εmask*(C₀+C₁)*diagonalControl (ChildState.canonicalRadial τ (internalQ Q η₀) dyad).profile*
+        (p.control T)^2*
+        (1+(|v|+height))^(dc+degree+4*n)*
+        reference*(ratioPenalty dyad)^((1:ℝ)/6)*
+        Z^(εchild+εremove+(δ₂+u+ell+δ₁/6+θclip/3)+κ*mesh) := by
+  have hex (J:Finset α):=actual_reference_paid_source (α:=J) M H hH angularOrder W aslot bslot
+    Mcap Lslot εremove lo hi κ a b Mslot εmask hMslot hεmask haPlain L hL degree S
+    ha hWs hW hMcap hLs hε hκ
+  choose n T dc Cc hCc hbound using hex
+  let n₀:=∑J:Finset α,n J
+  let dc₀:=∑J:Finset α,dc J
+  let T₀:Finset (ℕ×ℕ):=Finset.univ.biUnion T
+  let Ctot:ℝ:=1+∑J:Finset α,Cc J
+  have hCt:0<Ctot:=by
+    have hh:=Finset.sum_nonneg (fun J (_:J∈(Finset.univ:Finset (Finset α)))=>(hCc J).le)
+    dsimp [Ctot];linarith
+  refine ⟨n₀,T₀,dc₀,Ctot,hCt,?_⟩
+  intro η₀
+  let Choices:=ΣJ:Finset α,J→RayQuotient.Characters M H
+  let:Fintype (RayQuotient.Characters M H):=Fintype.ofFinite _
+  let:Fintype Choices:=inferInstance
+  have hchoices (c:Choices):∃Z₀:ℝ,1<Z₀ ∧ _:=hbound c.1 η₀ c.2
+  choose Zchoice hZchoice hb using hchoices
+  let Z₀:ℝ:=1+∑c:Choices,Zchoice c
+  have hZ₀:1<Z₀:=by
+    have hn:Nonempty Choices:=⟨⟨∅,fun i=>False.elim (Finset.notMem_empty _ i.property)⟩⟩
+    let:Nonempty Choices:=hn
+    have hh:=Finset.sum_pos (s:=Finset.univ) (fun c _=>(zero_lt_one.trans (hZchoice c)))
+      Finset.univ_nonempty
+    dsimp [Z₀];linarith
+  refine ⟨Z₀,hZ₀,?_⟩
+  intro Jorig θ Z hZ εchild Q hQM C₀ C₁ hC₀ hC₁ hzero hpos
+    w σ freq v height mesh hmesh hw hwm hwL hσlo hσhi hheight hfreq
+    src hmatch hhi hMs C R B D alloc hR τ horder hanchor dyad hn hwidth p hp₁ hp₂
+  dsimp only
+  intro hX₁ hX₂ hY₁ hY₂ A Mparent reference u ell δ₁ δ₂ θclip href
+    hu hell hδ₁ hδ₂ hθclip hparent hshift hdefect hclip
+  have hZi:Zchoice ⟨Jorig,θ⟩≤Z:=by
+    have hh:=Finset.single_le_sum (s:=Finset.univ)
+      (fun c _=>(zero_lt_one.trans (hZchoice c)).le) (Finset.mem_univ (⟨Jorig,θ⟩:Choices))
+    dsimp [Z₀] at hZ
+    linarith
+  have hp:=positiveAt_subtype M H hH angularOrder Jorig W bslot (a/max 1 b) b 2 0 L Lslot lo hi
+    Mcap εchild κ Z η₀ Q degree S C₁ hpos
+  have hh:=hb ⟨Jorig,θ⟩ Z hZi εchild Q hQM C₀ C₁ hC₀ hC₁ hzero hp
+    w σ freq v height mesh hmesh hw hwm hwL hσlo hσhi hheight hfreq
+    src hmatch hhi hMs C R B D alloc hR τ horder hanchor dyad hn hwidth p hp₁ hp₂
+    hX₁ hX₂ hY₁ hY₂ A Mparent reference u ell δ₁ δ₂ θclip href
+    hu hell hδ₁ hδ₂ hθclip hparent hshift hdefect hclip
+  have hc:Cc Jorig≤Ctot:=by
+    have hh:=Finset.single_le_sum (s:=Finset.univ) (fun J _=>(hCc J).le) (Finset.mem_univ Jorig)
+    dsimp [Ctot];linarith
+  have ht:T Jorig⊆T₀:=by
+    intro x hx
+    exact Finset.mem_biUnion.mpr ⟨Jorig,Finset.mem_univ _,hx⟩
+  have hctrl:p.control (T Jorig)≤p.control T₀:=by
+    unfold Profiles.control
+    exact mul_le_mul (Seminorm.le_def.mp (Finset.sup_mono ht) (p.profile 0))
+      (Seminorm.le_def.mp (Finset.sup_mono ht) (p.profile 1))
+      (sourceControl_nonneg _ _) (sourceControl_nonneg _ _)
+  have hn₀:n Jorig≤n₀:=Finset.single_le_sum (fun _ _=>Nat.zero_le _) (Finset.mem_univ Jorig)
+  have hdc₀:dc Jorig≤dc₀:=Finset.single_le_sum (fun _ _=>Nat.zero_le _) (Finset.mem_univ Jorig)
+  have hdeg:dc Jorig+degree+4*n Jorig≤dc₀+degree+4*n₀:=by omega
+  have hpow:(1+(|v|+height))^(dc Jorig+degree+4*n Jorig)≤
+      (1+(|v|+height))^(dc₀+degree+4*n₀):=
+    pow_le_pow_right₀ (by linarith [abs_nonneg v]) hdeg
+  have hcontrol:=p.control_nonneg (T Jorig)
+  have hd:0≤diagonalControl (canonicalRadial τ (internalQ Q η₀) dyad).profile:=by
+    unfold diagonalControl;positivity
+  have hz0:0<Z:=zero_lt_one.trans (hZ₀.trans_le hZ)
+  have hr:0<ratioPenalty dyad:=zero_lt_one.trans_le (le_max_left _ _)
+  apply hh.trans
+  gcongr
+
+end OAI.SevenEighths.Angular.CanonicalPaid
+
+#print axioms OAI.SevenEighths.Angular.CanonicalPaid.original_subsets_reference_paid
+set_option pp.deepTerms true in
+#check OAI.SevenEighths.Angular.CanonicalPaid.original_subsets_reference_paid

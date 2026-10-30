@@ -1,0 +1,43 @@
+{
+  "pdf": {
+    "path": "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\outputs\\ANGULAR_HECKE_7_8_INVESTIGATION_SUMMARY.pdf",
+    "sha256": "24c4686d01a375f68c42526f49b02beacd7d955788135c62742e97d75b12408b"
+  },
+  "repair_report": {
+    "path": "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\outputs\\ANGULAR_HECKE_7_8_REPAIR_REPORT.txt",
+    "sha256": "496422f8c197f320d48f6f5d682e071262c51585a757c3235a104999b84a05c6"
+  },
+  "repaired_packet": {
+    "path": "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\outputs\\ANGULAR_HECKE_7_8_REPRODUCIBILITY_REPAIRED_2026-10-29.zip",
+    "sha256": "9c1255008343d73f872cd0875a4efdef224ddd1cb0f65c432b9d3abcc5fd79e0",
+    "bytes": 128597347
+  },
+  "original_zip_unchanged": true,
+  "manifest_verification": {
+    "mode": "zip",
+    "files_checked": 43601,
+    "errors": [],
+    "mathematical_verification": false,
+    "integrity_passed": true
+  },
+  "verdicts_repaired": [
+    "ACCEPT",
+    "ACCEPT",
+    "ACCEPT",
+    "ACCEPT",
+    "ACCEPT"
+  ],
+  "original_verdict_5": "REJECT",
+  "source_modules_built": 8213,
+  "native_fresh_kernel_replay_passed": true,
+  "verified_fresh_compilations_reused": 8211,
+  "final_new_compilations": 2,
+  "source_import_audit_passed": true,
+  "auditor_import_removal_error_corrected_and_disclosed": true,
+  "published_utc": "2026-10-30T01:53:20.957121+00:00",
+  "independent_archive_check": {
+    "path": "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\outputs\\ANGULAR_HECKE_7_8_REPAIR_ARCHIVE_CHECK.json",
+    "sha256": "9c3b3bbc6ed023ff2223284787d169fab97ca61152763eb4cb2b2860161c4fe0",
+    "passed": true
+  }
+}

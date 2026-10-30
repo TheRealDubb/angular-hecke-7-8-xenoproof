@@ -1,0 +1,50 @@
+name = "PrimeNumberTheoremAnd"
+defaultTargets = ["PrimeNumberTheoremAnd.Wiener", "PrimeNumberTheoremAndZetaFive"]
+
+[[require]]
+name = "LeanArchitect"
+git = "https://github.com/hanwenzhu/LeanArchitect.git"
+rev = "v4.34.0"
+
+[[require]]
+name = "checkdecls"
+git = "https://github.com/PatrickMassot/checkdecls.git"
+
+[[require]]
+name = "leancert"
+git = "https://github.com/alerad/leancert.git"
+rev = "v4.34.0"
+
+[[require]]
+name = "PrimeCert"
+git = "https://github.com/b-mehta/PrimeCert"
+rev = "v4.33.0"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.34.0"
+
+[[lean_lib]]
+name = "PrimeNumberTheoremAnd"
+leanOptions = { autoImplicit = false }
+
+[[lean_lib]]
+name = "PrimeNumberTheoremAndZetaFive"
+roots = ["PrimeNumberTheoremAnd.ZetaFive"]
+globs = ["PrimeNumberTheoremAnd.ZetaFive.*"]
+
+[[lean_lib]]
+name = "PrimeNumberTheoremAndCatalan"
+roots = ["PrimeNumberTheoremAnd.Catalan"]
+globs = ["PrimeNumberTheoremAnd.Catalan.*"]
+
+[[lean_lib]]
+name = "PrimeNumberTheoremAndSiegelZeros"
+roots = ["PrimeNumberTheoremAnd.SiegelZeros.HadamardSupport"]
+globs = ["PrimeNumberTheoremAnd.SiegelZeros.*"]
+
+[[lean_lib]]
+name = "PrimeNumberTheoremAndErdos970"
+roots = ["PrimeNumberTheoremAnd.Erdos970"]
+globs = ["PrimeNumberTheoremAnd.Erdos970.*"]

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-07\\g\\work\\formal\\runtime\\lean-4.34.1-windows\\bin\\lean.exe",
+    "--run",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\CompareRepairedContinuation.lean",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\replay-objects",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-full-build\\objects"
+  ],
+  "source_sha256": "2b9b24cfcd0b1280e11bee549587e454cf5feea7b5d573fb8da62d9360af216e",
+  "lean_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+  "baseline_object_sha256": "a02868a603169150fe765e8b21f531c193c05b7a963d9f1aaca8655ae6caf496",
+  "clean_object_sha256": "e6f526369801fa4c5633f8f95c698180effccf8917d0c2472493abf17ca313e8",
+  "scope": "Supplemental semantic comparison of retained declarations in the one split module, against baseline author objects. Full clean build and native replay are separate primary evidence.",
+  "start_utc": "2026-10-30T01:27:38.501036+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 291.04699999978766,
+  "log_sha256": "660091422ce1bce7b5e2534ad8b7cc22e1b90f8daa0f67177041e05189a3edbf"
+}

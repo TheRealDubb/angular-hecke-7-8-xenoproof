@@ -1,0 +1,12 @@
+{
+  "check": "PublicClosureCensus",
+  "command": [
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-07\\g\\work\\formal\\runtime\\lean-4.34.1-windows\\bin\\lean.exe",
+    "--run",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-packet\\ANGULAR_HECKE_7_8_COLD_REVIEW_2026-10-28\\tools\\PublicClosureCensus.lean"
+  ],
+  "exit_code": 0,
+  "source_sha256": "ad9ae9231b9a8a3dd6a45d8840a924aee5ce7716f9aa1263ccc25273c203036a",
+  "log_sha256": "c7267fd7d1e00b90a6558346d02b2aa2b6a8d6fa3a6da1fcd0685c02263bbe6d",
+  "seconds": 114.31199999991804
+}

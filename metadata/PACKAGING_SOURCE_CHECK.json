@@ -1,0 +1,174 @@
+{
+  "source_modules": 8229,
+  "source_bytes": 87694917,
+  "pinned_git_blob_matches": {
+    "batteries": 74,
+    "mathlib": 3845,
+    "importGraph": 10,
+    "aesop": 132,
+    "Qq": 14,
+    "plausible": 13,
+    "LeanSearchClient": 4,
+    "proofwidgets": 10,
+    "OAI-003": 2925
+  },
+  "accounted_upstream_variations": [
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.H1",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/H1.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.Translation",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/Translation.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.TranslationEstimate",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/TranslationEstimate.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.TranslationEstimateL2",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/TranslationEstimateL2.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.TranslationEstimateH1",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/TranslationEstimateH1.lean"
+    },
+    {
+      "module": "RellichKondrachov.MeasureTheory.Function.LpSpace.Restrict",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/MeasureTheory/Function/LpSpace/Restrict.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Smoothing",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Smoothing.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Approximation",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Approximation.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Compactness",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Compactness.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.ArzelaAscoli",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/ArzelaAscoli.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Transfer",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Transfer.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.FrechetKolmogorov",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/FrechetKolmogorov.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.Kernels",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/Kernels.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.L2Compactness.TranslationIntegral",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/L2Compactness/TranslationIntegral.lean"
+    },
+    {
+      "module": "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.Rellich",
+      "provider": "rellich-kondrachov",
+      "patch": "metadata/upstream_patches/rellich-kondrachov-lean4341.patch",
+      "patch_sha256": "0c121d8517dfeadc93ef24fe2deb56beec7cb3998e2552dee8f61c780b1408c8",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/rellich-kondrachov/RellichKondrachov/Analysis/FunctionalSpaces/Sobolev/Euclidean/Rellich.lean"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Sobolev",
+      "provider": "PrimeNumberTheoremAnd",
+      "patch": "metadata/upstream_patches/PrimeNumberTheoremAnd-lean4341.patch",
+      "patch_sha256": "0890432340c0025973bcfe070b634355fa366cc831595f68526e4c73c8903d82",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Sobolev.lean"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Fourier",
+      "provider": "PrimeNumberTheoremAnd",
+      "patch": "metadata/upstream_patches/PrimeNumberTheoremAnd-lean4341.patch",
+      "patch_sha256": "0890432340c0025973bcfe070b634355fa366cc831595f68526e4c73c8903d82",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Fourier.lean"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.SmoothExistence",
+      "provider": "PrimeNumberTheoremAnd",
+      "patch": "metadata/upstream_patches/PrimeNumberTheoremAnd-lean4341.patch",
+      "patch_sha256": "0890432340c0025973bcfe070b634355fa366cc831595f68526e4c73c8903d82",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/SmoothExistence.lean"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Wiener",
+      "provider": "PrimeNumberTheoremAnd",
+      "patch": "metadata/upstream_patches/PrimeNumberTheoremAnd-lean4341.patch",
+      "patch_sha256": "0890432340c0025973bcfe070b634355fa366cc831595f68526e4c73c8903d82",
+      "matches_pinned_patch_for_this_file": true,
+      "baseline_path": "metadata/upstream_baselines/PrimeNumberTheoremAnd/PrimeNumberTheoremAnd/Wiener.lean"
+    }
+  ],
+  "source_issues": [],
+  "other_notices": [],
+  "angular_sources_and_available_object_hashes_rechecked": 1183,
+  "new_Lean_compilation_performed": false,
+  "independent_replay_performed": false
+}

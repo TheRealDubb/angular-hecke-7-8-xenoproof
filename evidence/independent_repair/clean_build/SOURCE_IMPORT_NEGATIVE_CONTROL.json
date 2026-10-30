@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "command": [
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-07\\g\\work\\formal\\runtime\\lean-4.34.1-windows\\bin\\lean.exe",
+    "--run",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-packet\\ANGULAR_HECKE_7_8_COLD_REVIEW_2026-10-28\\tools\\ParseSourceImports.lean",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-full-build\\source_import_negative_control.tsv"
+  ],
+  "harness_sha256": "a5072f63600638ea5e6eec3f6821248eec6ad66fe17469979e205c65cbd2e32c",
+  "source_sha256": "c9cda2019999bf6df2aa880924a967b6864bb60c59730e41e820430c81b03f86",
+  "lean_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+  "log_sha256": "245fbc1acd10ce77dd4acfe31e22fac6882896990fc3e6ab51878e06119e905c",
+  "source_imports": [
+    "AngularNormTwist",
+    "AngularFamilyContinuation",
+    "AngularSeedNonvanishing"
+  ],
+  "incorrect_old_index_imports": [
+    "AngularNormTwist",
+    "AngularFamilyContinuation"
+  ],
+  "scope": "Negative control: Lean header parsing detects the exact mismatch missed by the first auditor repair/preservation scripts."
+}

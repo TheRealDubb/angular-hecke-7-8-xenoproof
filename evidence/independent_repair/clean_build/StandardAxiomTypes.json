@@ -1,0 +1,11 @@
+{
+  "check": "StandardAxiomTypes",
+  "command": [
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-07\\g\\work\\formal\\runtime\\lean-4.34.1-windows\\bin\\lean.exe",
+    "C:\\Users\\epsst\\Documents\\Codex\\2026-10-29\\g\\work\\repaired-packet\\ANGULAR_HECKE_7_8_COLD_REVIEW_2026-10-28\\tools\\StandardAxiomTypes.lean"
+  ],
+  "exit_code": 0,
+  "source_sha256": "aaad30eead6decfb4bfa14e556f4c7ed87e9796dae7e93ba2b403a90317b09ba",
+  "log_sha256": "4398d587df0903eb3f32ae39c4b1e23d3ab26576451bae7c566724d707b46f3a",
+  "seconds": 10.5
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "file": "sources\\S4\\paper78.tex",
+    "repository": "openai/math",
+    "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "repository_path": "preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex",
+    "git_blob": "268c4e3206d460c617d3d2129742a72b831b3def",
+    "sha256": "42a5ee0febca59fd1def55cfd6c6808c322ef4237d7726303ea52f711deac6a3",
+    "bytes": 766316,
+    "status": "exact Git blob"
+  },
+  {
+    "file": "sources\\S4\\paper1112.tex",
+    "repository": "openai/math",
+    "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "repository_path": "preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/build/paper2.tex",
+    "git_blob": "2000faddbbebac5de0ecfe0b962534ea61a852d5",
+    "sha256": "d9a8f15aa770cf883d0eabd2b775fad694ce20b44cba7928f5c0c9a6d8750d4d",
+    "bytes": 169005,
+    "status": "exact Git blob"
+  }
+]
